@@ -72,15 +72,12 @@ These preprocessing steps ensured consistency between model training and deploym
 
 Multiple regression algorithms were trained and compared.
 
-Model |	R² Score |
-
-Linear Regression | 87.24% |
-
-Random Forest Regressor | 88.61% |
-
-XGBoost Regressor | 90.51% |
-
-Gradient Boosting Regressor | 90.83% |
+| Model | R² Score |
+|--------|----------|
+| Linear Regression | 87.24% |
+| Random Forest Regressor | 88.61% |
+| XGBoost Regressor | 90.51% |
+| **Gradient Boosting Regressor ⭐** | **90.83%** |
 
 The experiments demonstrated that ensemble-based boosting techniques outperformed traditional linear models for this problem.
 
@@ -93,12 +90,13 @@ Feature importance analysis was performed using Gradient Boosting Regressor to i
 Several experiments were conducted using different feature subsets:
 
 Features Used |	R² Score |
+|-------------|-----------|
 
-Top 5 Features | ~67% |
+| Top 5 Features | ~67% |
 
-Top 10 Features	| ~70% |
+| Top 10 Features | ~70% |
 
-Top 15 Features | ~78% |
+| Top 15 Features | ~78% |
 
 Although larger feature sets improved performance, they increased the amount of information required from users.
 
