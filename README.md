@@ -89,11 +89,11 @@ Feature importance analysis was performed using Gradient Boosting Regressor to i
 
 Several experiments were conducted using different feature subsets:
 
-| Features Used | R² Score |
-|--------------|----------|
-| Top 5 Features | ~67% |
-| Top 10 Features | ~70% |
-| Top 15 Features | ~78% |
+| Feature Set | R² Score |
+|------------|----------|
+| Top 5 Important Features | ~67% |
+| Top 10 Important Features | ~70% |
+| Top 15 Important Features | ~78% |
 
 Although larger feature sets improved performance, they increased the amount of information required from users.
 
