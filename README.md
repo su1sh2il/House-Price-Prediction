@@ -217,6 +217,7 @@ House-Price-Prediction/
 ├── LICENSE
 
 ├── images/
+
 │   └── app_preview.png
 
 └── House Price Prediction using Machine Learning.ipynb
@@ -225,33 +226,43 @@ House-Price-Prediction/
 
 # 📈 Machine Learning Workflow
 Data Collection
+
         ↓
         
 Data Cleaning
+
         ↓
         
 Missing Value Handling
+
         ↓
         
 Feature Engineering
+
         ↓
         
 Categorical Encoding
+
         ↓
         
 Feature Selection
+
         ↓ 
         
 Model Training
+
         ↓ 
         
 Model Evaluation
+
         ↓ 
         
 Model Serialization
+
         ↓ 
         
 Streamlit Application
+
         ↓ 
         
 Cloud Deployment
