@@ -123,6 +123,17 @@ These features provide a balance between prediction accuracy and user convenienc
 
 ---
 
+## 🤖 Model Comparison (Using 7 Selected Features)
+
+| Model | Features Used | R² Score |
+|--------|--------------|----------|
+| Linear Regression | 7 Features | 79.51% |
+| Random Forest Regressor | 7 Features | 86.50% |
+| XGBoost Regressor | 7 Features | 82.71% |
+| Gradient Boosting Regressor | 7 Features | 88.25% ⭐ |
+
+---
+
 # 🚀 Deployed Model
 
 The production application uses a Gradient Boosting Regressor trained on the selected feature set.
