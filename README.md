@@ -40,25 +40,28 @@ SalePrice
 
 The following preprocessing techniques were applied:
 
-# Missing Value Treatment
+## Missing Value Treatment
 Identified missing values
 
 Handled null values using appropriate strategies
 
-# Categorical Feature Encoding
+## Categorical Feature Encoding
 
 Implemented One-Hot Encoding for categorical variables including:
 
 HouseStyle
 Neighborhood
 
-# Data Transformation
+## Data Transformation
 
 Used:
 
 ColumnTransformer
+
 Pipeline
+
 Train-Test Split
+
 Feature Selection
 
 These preprocessing steps ensured consistency between model training and deployment.
@@ -70,10 +73,14 @@ These preprocessing steps ensured consistency between model training and deploym
 Multiple regression algorithms were trained and compared.
 
 Model |	R² Score |
-Linear Regression |	87.24% |
-Random Forest Regressor |	88.61% |
-XGBoost Regressor |	90.51% |
-Gradient Boosting Regressor |	90.83% |
+
+Linear Regression | 87.24% |
+
+Random Forest Regressor | 88.61% |
+
+XGBoost Regressor | 90.51% |
+
+Gradient Boosting Regressor | 90.83% |
 
 The experiments demonstrated that ensemble-based boosting techniques outperformed traditional linear models for this problem.
 
@@ -86,9 +93,12 @@ Feature importance analysis was performed using Gradient Boosting Regressor to i
 Several experiments were conducted using different feature subsets:
 
 Features Used |	R² Score |
-Top 5 Features |	~67% |
+
+Top 5 Features | ~67% |
+
 Top 10 Features	| ~70% |
-Top 15 Features |	~78% |
+
+Top 15 Features | ~78% |
 
 Although larger feature sets improved performance, they increased the amount of information required from users.
 
@@ -101,11 +111,17 @@ To improve usability, a smaller feature set was selected for deployment.
 The deployed application uses the following seven features:
 
 LotArea
+
 HouseStyle
+
 Neighborhood
+
 YearBuilt
+
 OverallQual
+
 TotalBsmtSF
+
 GarageCars
 
 These features provide a balance between prediction accuracy and user convenience.
@@ -117,9 +133,13 @@ These features provide a balance between prediction accuracy and user convenienc
 The production application uses a Gradient Boosting Regressor trained on the selected feature set.
 
 Performance
+
 Approximate R² Score: 88%
+
 Optimized for real-world usability
+
 Reduced user input requirements
+
 Faster prediction workflow
 
 This approach sacrifices a small amount of accuracy in exchange for a significantly better user experience.
@@ -131,44 +151,74 @@ This approach sacrifices a small amount of accuracy in exchange for a significan
 Users can:
 
 Enter property information
+
 Select house style
+
 Select neighborhood
+
 Provide construction details
+
 Submit information through an intuitive interface
+
 Instantly receive a predicted house price
 
 ---
 
 # 🛠️ Technologies Used
+
 # Programming
+
 Python
+
 # Data Analysis
+
 Pandas
+
 NumPy
+
 # Machine Learning
+
 Scikit-Learn
+
 Gradient Boosting Regressor
+
 Random Forest Regressor
+
 XGBoost Regressor
+
 Linear Regression
+
 # Deployment
+
 Streamlit
+
 # Version Control
+
 Git
+
 GitHub
 
 ---
 
 # 📂 Project Structure
+
 House-Price-Prediction/
+
 │
+
 ├── app.py
+
 ├── gb_model.pkl
+
 ├── requirements.txt
+
 ├── README.md
+
 ├── LICENSE
+
 ├── images/
 │   └── app_preview.png
+
 └── House Price Prediction using Machine Learning.ipynb
 
 ---
@@ -176,24 +226,34 @@ House-Price-Prediction/
 # 📈 Machine Learning Workflow
 Data Collection
         ↓
+        
 Data Cleaning
         ↓
+        
 Missing Value Handling
         ↓
+        
 Feature Engineering
         ↓
+        
 Categorical Encoding
         ↓
+        
 Feature Selection
         ↓ 
+        
 Model Training
         ↓ 
+        
 Model Evaluation
         ↓ 
+        
 Model Serialization
         ↓ 
+        
 Streamlit Application
         ↓ 
+        
 Cloud Deployment
 
 ---
@@ -219,27 +279,45 @@ streamlit run app.py
 ---
 
 # 🎓 Key Skills Demonstrated
+
 Data Preprocessing
+
 Missing Value Handling
+
 Feature Engineering
+
 Feature Selection
+
 One-Hot Encoding
+
 ColumnTransformer
+
 Scikit-Learn Pipelines
+
 Regression Modeling
+
 Model Evaluation
+
 Cross Validation
+
 Streamlit Development
+
 Git & GitHub
+
 Cloud Deployment
 
 ---
 
 # 🔮 Future Improvements
+
 Hyperparameter optimization
+
 Interactive feature importance dashboard
+
 Batch prediction using CSV upload
+
 Advanced visualization components
+
 Automated model comparison interface
 
 ---
